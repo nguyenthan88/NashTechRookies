@@ -1,0 +1,15 @@
+D:\NashTech\nashtechrookies\nashtechday_3_2\bin\Debug\net6.0\nashtechday_3_2.exe
+D:\NashTech\nashtechrookies\nashtechday_3_2\bin\Debug\net6.0\nashtechday_3_2.deps.json
+D:\NashTech\nashtechrookies\nashtechday_3_2\bin\Debug\net6.0\nashtechday_3_2.runtimeconfig.json
+D:\NashTech\nashtechrookies\nashtechday_3_2\bin\Debug\net6.0\nashtechday_3_2.dll
+D:\NashTech\nashtechrookies\nashtechday_3_2\bin\Debug\net6.0\nashtechday_3_2.pdb
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.csproj.AssemblyReference.cache
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.GeneratedMSBuildEditorConfig.editorconfig
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.AssemblyInfoInputs.cache
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.AssemblyInfo.cs
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.csproj.CoreCompileInputs.cache
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.dll
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\refint\nashtechday_3_2.dll
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.pdb
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\nashtechday_3_2.genruntimeconfig.cache
+D:\NashTech\nashtechrookies\nashtechday_3_2\obj\Debug\net6.0\ref\nashtechday_3_2.dll

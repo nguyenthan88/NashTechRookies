@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "nashtechday_3_2/1.0.0": {
+        "runtime": {
+          "nashtechday_3_2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "nashtechday_3_2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
