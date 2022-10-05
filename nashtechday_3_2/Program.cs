@@ -21,7 +21,7 @@
             Prime = true;
         }
     }
-    static async Task Task1()
+    static async Task TaskPrimeNumber()
     {
         await Task.Run(() =>
            {
@@ -32,7 +32,7 @@
     }
     static async Task Main(string[] args)
     {
-        await Task1();
+        await TaskPrimeNumber();
         Console.Write("\n");
         Console.WriteLine("-------------------");
         Console.ReadKey();
