@@ -16,7 +16,7 @@
             }
             if (Prime)
             {
-                Console.Write(($"{a,3}"));
+                Console.Write(string.Format("{0,-3}\t", a));
             }
             Prime = true;
         }
@@ -33,8 +33,6 @@
     static async Task Main(string[] args)
     {
         await TaskPrimeNumber();
-        Console.Write("\n");
-        Console.WriteLine("-------------------");
         Console.ReadKey();
     }
 }
