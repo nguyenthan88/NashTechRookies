@@ -8,7 +8,9 @@ namespace Middleware.Example
             {
                 Directory.CreateDirectory(directoryPath);
             }
+
             string filePath = directoryPath + "\\" + fileName;
+
             if (!File.Exists(filePath))
             {
                 File.WriteAllText(filePath, textContent);

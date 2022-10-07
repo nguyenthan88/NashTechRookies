@@ -12,6 +12,8 @@ public class NashTechDay1CustomMiddleware
     public async Task InvokeAsync(HttpContext context)
     {
         var stringBuilder = new StringBuilder();
+        var directoryPath = Path.Combine(_hostingEnvironment.ContentRootPath, "LogFiles");
+
         stringBuilder.Append("Schema: " + context.Request.Scheme);
         stringBuilder.Append(Environment.NewLine);
         stringBuilder.Append("Host: " + context.Request.Host);
@@ -21,7 +23,7 @@ public class NashTechDay1CustomMiddleware
         stringBuilder.Append("QueryString: " + context.Request.QueryString);
         stringBuilder.Append(Environment.NewLine);
         stringBuilder.Append("RequestBody: " + context.Request.Body);
-        var directoryPath = Path.Combine(_hostingEnvironment.ContentRootPath, "LogFiles");
+
         LoggingHelper.WriteToFile(directoryPath, "RequestLog.txt", stringBuilder.ToString());
         await Task.Run(
           async () =>
