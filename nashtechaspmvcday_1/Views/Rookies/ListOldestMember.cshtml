@@ -1,0 +1,23 @@
+@model PersonModel
+<div class="text-center">
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>FirstName </th>
+            <th>LastName </th>
+            <th>Gender </th>
+            <th>DateOfBirth</th>
+            <th>PhoneNumber</th>
+            <th>BirthPlace</th>
+            <th>IsGraduated</th>
+        </tr>
+        <tr>
+            <td>@Model.FirstName</td>
+            <td>@Model.LastName</td>
+            <td>@Model.Gender</td>
+            <td>@Model.DateOfBirth</td>
+            <td>@Model.PhoneNumber</td>
+            <td>@Model.BirthPlace</td>
+            <td>@Model.IsGraduated</td>
+        </tr>
+    </table>
+</div>

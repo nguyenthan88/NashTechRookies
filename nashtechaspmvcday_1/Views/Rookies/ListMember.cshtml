@@ -1,0 +1,27 @@
+@model List<PersonModel>
+
+<div class="text-center">
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>FirstName </th>
+            <th>LastName </th>
+            <th>Gender </th>
+            <th>DateOfBirth</th>
+            <th>PhoneNumber</th>
+            <th>BirthPlace</th>
+            <th>IsGraduated</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Gender</td>
+                <td>@item.DateOfBirth</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.BirthPlace</td>
+                <td>@item.IsGraduated</td>
+            </tr>
+        }
+    </table>
+</div>

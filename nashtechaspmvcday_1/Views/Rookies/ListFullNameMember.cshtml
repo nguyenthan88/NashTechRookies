@@ -1,0 +1,14 @@
+@model List<PersonModel>
+<div class="text-center">
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>FullName</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FullName</td>
+            </tr>
+        }
+    </table>
+</div>
