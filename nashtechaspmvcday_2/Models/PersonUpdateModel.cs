@@ -13,7 +13,7 @@ namespace nashtechaspmvcday_2.Models
         [DisplayName("Date of Birth")]
         public DateTime DateOfBirth { get; set; }
 
-        [DisplayName("BirthPlace")]
+        [DisplayName("Birth Place")]
         public string? BirthPlace { get; set; }
     }
 }
