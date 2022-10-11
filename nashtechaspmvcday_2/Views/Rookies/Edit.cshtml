@@ -1,0 +1,36 @@
+@model PersonUpdateModel
+@{
+    ViewData["Title"] = "Rookies Page";
+    var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
+}
+<div>
+    <h1 class="display-6 col-8 offset-2">Edit Person</h1>
+    <form asp-controller="Rookies" asp-action="Update" asp-route-index="@index" method="post" class="col-8 offset-2">
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" placeholder="">
+            <span asp-validation-for="FirstName" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" placeholder="">
+            <span asp-validation-for="LastName" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateOfBirth"></label>
+            <input asp-for="DateOfBirth" type="date" class="form-control" placeholder="">
+            <span asp-validation-for="DateOfBirth" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="BirthPlace"></label>
+            <input asp-for="BirthPlace" class="form-control" placeholder="">
+            <span asp-validation-for="BirthPlace" class="form-text text-dangger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
