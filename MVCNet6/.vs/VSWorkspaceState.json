@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MVCNet6",
+    "\\MVCNet6.DataAccess",
+    "\\MVCNet6.DataAccess\\obj",
+    "\\MVCNet6.Service",
+    "\\MVCNet6.Service\\Services",
+    "\\MVCNet6\\Controllers"
+  ],
+  "SelectedNode": "\\MVCNet6\\Controllers\\PeopleController.cs",
+  "PreviewInSolutionExplorer": false
+}

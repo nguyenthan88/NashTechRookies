@@ -1,0 +1,47 @@
+@model MVCNet6.Service.Requests.UpdatePeopleRequest
+@{
+    ViewData["Title"] = "Rookies Page";
+    var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
+}
+<div>
+    <h1 class="display-6 col-8 offset-2">Edit Person</h1>
+    <form asp-controller="People" asp-action="Edit" asp-route-index="@index" method="post" class="col-8 offset-2">
+        <div class="form-group">
+            <label asp-for="@Model.Id"></label>
+            <input asp-for="@Model.Id" class="form-control" placeholder="">
+            <span asp-validation-for="@Model.Id" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.FirstName"></label>
+            <input asp-for="@Model.FirstName" class="form-control" placeholder="">
+            <span asp-validation-for="@Model.FirstName" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.LastName"></label>
+            <input asp-for="@Model.LastName" class="form-control" placeholder="">
+            <span asp-validation-for="@Model.LastName" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Gender"></label>
+            <select asp-for="@Model.Gender" class="form-control">
+                <option value="Male">Male</option>
+                <option value="FeMale">FeMale</option>
+                <option value="Other">Other</option>
+            </select>
+            <span asp-validation-for="@Model.Gender" class="form-text text-dangger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.BirthPlace"></label>
+            <input asp-for="@Model.BirthPlace" class="form-control" placeholder="">
+            <span asp-validation-for="@Model.BirthPlace" class="form-text text-dangger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        <button type="submit" class="btn btn-secondary mt-2" asp-action="Index">Back To List</button>
+    </form>
+</div>
