@@ -2,7 +2,6 @@ using EFAPIDAY1.Models;
 using EFAPIDAY1.Services;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace EFAPIDAY1.Controllers
 {
     [ApiController]
