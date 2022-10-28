@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "R8noe+sLN8uwJczimn0r4I0Sugo3c+7FNUHrL4IxqO7Hth2FKIB/NdOKVEQT5TdUMAFdK/5QZEpSZmYw8pSC3Q==",
+  "success": true,
+  "projectFilePath": "d:\\NashTech\\nashtechrookies\\UnitTest\\MVCNet6\\MVCNet6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nguyenvanthan\\.nuget\\packages\\csvhelper\\29.0.0\\csvhelper.29.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
