@@ -25,7 +25,7 @@ namespace EFAPIDAY2.Controllers
             return _categoryService.CreateCategory(createCategory);
         }
 
-        [HttpGet("get-list-all-category")]
+        [HttpGet("get-list-all-categories")]
         public ActionResult<IEnumerable<CreateCategoryResponse>> GetAll()
         {
             try

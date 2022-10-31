@@ -44,6 +44,7 @@ namespace EFAPIDAY2.Services
                             CategoryId = newProduct.CategoryId
                         };
                     }
+
                     return null;
                 }
                 catch
@@ -122,6 +123,7 @@ namespace EFAPIDAY2.Services
 
                     var product = _productRepo.Get(x => x.Id == id);
 
+                    if (category == null) return null;
                     if (product == null) return null;
 
                     product.ProductName = updateProduct.ProductName;

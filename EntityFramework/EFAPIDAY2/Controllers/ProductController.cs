@@ -16,7 +16,7 @@ namespace EFAPIDAY2.Controllers
             _productService = productService;
         }
 
-        [HttpGet("get-list-all-product")]
+        [HttpGet("get-list-all-products")]
         public ActionResult<IEnumerable<CreateProductResponse>> GetAll()
         {
             try

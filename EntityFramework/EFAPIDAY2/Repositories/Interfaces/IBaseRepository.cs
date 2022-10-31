@@ -3,9 +3,9 @@ using System.Linq.Expressions;
 namespace EFAPIDAY2.Repositories;
 public interface IBaseRepository<T> where T : class
 {
-    IEnumerable<T> GetAll(Expression<Func<T, bool>> predicate);
+    IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate = null);
 
-    T? Get(Expression<Func<T, bool>> predicate);
+    T? Get(Expression<Func<T, bool>>? predicate = null);
 
     T Create(T entity);
 
