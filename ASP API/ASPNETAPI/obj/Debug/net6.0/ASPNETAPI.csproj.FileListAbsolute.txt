@@ -1,0 +1,54 @@
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\appsettings.json
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.exe
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.deps.json
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.runtimeconfig.json
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.pdb
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.csproj.AssemblyReference.cache
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.AssemblyInfoInputs.cache
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.AssemblyInfo.cs
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.csproj.CoreCompileInputs.cache
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\scopedcss\bundle\ASPNETAPI.styles.css
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.csproj.CopyComplete
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\refint\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.pdb
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.genruntimeconfig.cache
+D:\NashTech\nashtechrookies\ASPNETAPI\obj\Debug\net6.0\ref\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\appsettings.json
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.exe
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.deps.json
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.runtimeconfig.json
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\ASPNETAPI.pdb
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.csproj.AssemblyReference.cache
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.AssemblyInfoInputs.cache
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.AssemblyInfo.cs
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.csproj.CoreCompileInputs.cache
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\scopedcss\bundle\ASPNETAPI.styles.css
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.csproj.CopyComplete
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\refint\ASPNETAPI.dll
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.pdb
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ASPNETAPI.genruntimeconfig.cache
+D:\NashTech\nashtechrookies\ASP API\ASPNETAPI\obj\Debug\net6.0\ref\ASPNETAPI.dll
