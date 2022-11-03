@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj": {}
+    "D:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj": {}
   },
   "projects": {
-    "d:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj": {
+    "D:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj",
+        "projectUniqueName": "D:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj",
         "projectName": "ASPNETAPI",
-        "projectPath": "d:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj",
+        "projectPath": "D:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\ASPNETAPI.csproj",
         "packagesPath": "C:\\Users\\nguyenvanthan\\.nuget\\packages\\",
-        "outputPath": "d:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\obj\\",
+        "outputPath": "D:\\NashTech\\nashtechrookies\\ASP API\\ASPNETAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguyenvanthan\\AppData\\Roaming\\NuGet\\NuGet.Config",

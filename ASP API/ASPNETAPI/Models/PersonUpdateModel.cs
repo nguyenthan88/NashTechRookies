@@ -10,7 +10,5 @@ public class PersonUpdateModel
 
     public DateTime DateOfBirth { get; set; }
 
-    public string? PhoneNumber { get; set; }
-
     public string? BirthPlace { get; set; }
 }

@@ -6,13 +6,13 @@ namespace ASPNETAPI
     {
         List<PersonModel> GetListPeople();
 
-        public PersonModel? GetPerson(int index);
+        public PersonModel? GetPerson(Guid id);
 
         public PersonModel? Create(PersonModel model);
 
-        public PersonModel? Update(int index, PersonModel model);
+        public PersonModel? Update(Guid id, PersonModel model);
 
-        public PersonModel? Delete(int index);
+        public PersonModel? Delete(Guid id);
 
         List<PersonModel> FilterList(string firstName, string lastName, string gender, string birthPlace);
     }

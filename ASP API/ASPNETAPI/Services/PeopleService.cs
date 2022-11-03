@@ -87,15 +87,17 @@ public class PeopleService : IService
         return model;
     }
 
-    public PersonModel? Delete(int index)
+    public PersonModel? Delete(Guid id)
     {
-        if (index >= 0 && index < _people.Count)
+        var index = _people.FindIndex(p => p.Id.Equals(id));
+
+        if (index >= 0)
         {
-            var person = _people[index];
             _people.RemoveAt(index);
 
-            return person;
+            return _people[index];
         }
+
         return null;
     }
 
@@ -108,23 +110,22 @@ public class PeopleService : IService
         return _people;
     }
 
-    public PersonModel? GetPerson(int index)
+    public PersonModel? GetPerson(Guid id)
     {
-        if (index >= 0 && index < _people.Count)
-        {
-            return _people[index];
-        }
-        return null;
+        return _people.SingleOrDefault(p => p.Id.Equals(id));
     }
 
-    public PersonModel? Update(int index, PersonModel model)
+    public PersonModel? Update(Guid id, PersonModel model)
     {
-        if (index >= 0 && index < _people.Count)
+        var index = _people.FindIndex(p => p.Id.Equals(id));
+
+        if (index >= 0)
         {
             _people[index] = model;
 
-            return model;
+            return _people[index];
         }
+
         return null;
     }
     public List<PersonModel> FilterList(string firstName, string lastName, string gender, string birthPlace)

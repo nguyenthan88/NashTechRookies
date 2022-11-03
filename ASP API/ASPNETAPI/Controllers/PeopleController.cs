@@ -16,7 +16,7 @@ public class PeopleController : ControllerBase
         _logger = logger;
         _service = service;
     }
-    [HttpGet("/people")]
+    [HttpGet]
     public IEnumerable<PersonModel> GetListPeople()
     {
         var data = _service.GetListPeople();
@@ -31,12 +31,12 @@ public class PeopleController : ControllerBase
                    BirthPlace = person.BirthPlace,
                };
     }
-    [HttpGet("{index:int}")]
-    public IActionResult? GetPerson(int index)
+    [HttpGet("{Id:Guid}")]
+    public IActionResult? GetPerson(Guid id)
     {
         try
         {
-            var data = _service.GetPerson(index);
+            var data = _service.GetPerson(id);
             if (data == null) { return NotFound(); }
             return new JsonResult(new PersonModel
             {
@@ -54,7 +54,7 @@ public class PeopleController : ControllerBase
         }
 
     }
-    [HttpPost("")]
+    [HttpPost]
     public IActionResult Create(PersonCreateModel model)
     {
         if (!ModelState.IsValid) return BadRequest();
@@ -81,8 +81,8 @@ public class PeopleController : ControllerBase
         }
     }
 
-    [HttpPut("{index:int}")]
-    public IActionResult Update(int index, PersonUpdateModel model)
+    [HttpPut("{Id:Guid}")]
+    public IActionResult Update(Guid id, PersonUpdateModel model)
     {
         if (!ModelState.IsValid)
         {
@@ -91,7 +91,7 @@ public class PeopleController : ControllerBase
 
         try
         {
-            var data = _service.GetPerson(index);
+            var data = _service.GetPerson(id);
 
             if (data == null)
             {
@@ -105,7 +105,7 @@ public class PeopleController : ControllerBase
                 data.DateOfBirth = model.DateOfBirth;
                 data.BirthPlace = model.BirthPlace;
 
-                var result = _service.Update(index, data);
+                var result = _service.Update(id, data);
 
                 return new JsonResult(result);
             }
@@ -118,19 +118,19 @@ public class PeopleController : ControllerBase
         }
     }
 
-    [HttpDelete("{index:int}")]
-    public IActionResult Delete(int index)
+    [HttpDelete("{id:Guid}")]
+    public IActionResult Delete(Guid id)
     {
         try
         {
-            var data = _service.GetPerson(index);
+            var data = _service.GetPerson(id);
 
             if (data == null)
             {
                 return NotFound();
             }
 
-            var result = _service.Delete(index);
+            var result = _service.Delete(id);
 
             return new JsonResult(result);
         }
@@ -147,4 +147,3 @@ public class PeopleController : ControllerBase
         return _service.FilterList(firstName, lastName, gender, birthPlace);
     }
 }
-
