@@ -24,17 +24,16 @@ import DialogTitle from '@mui/material/DialogTitle';
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     height: '40px',
-    margin: '10px',
+    marginBottom: '15px',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: '#D3D3D3',
     '&:hover': {
         backgroundColor: alpha(theme.palette.common.black, 0.25),
     },
-    marginLeft: 0,
+    marginLeft: -10,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
         display: 'flex',
-        marginLeft: theme.spacing(1),
         width: '500px',
     },
 }));
@@ -112,36 +111,6 @@ function Categories() {
         return null;
     };
 
-    // const handleEdit = async (id) => {
-    //     if (id != null) {
-    //         try {
-    //             const response = await fetch(`https://localhost:7233/Category/${id}`, {
-    //                 method: 'PUT',
-    //                 body: JSON.stringify({
-    //                     Name: editName,
-    //                     description: description,
-    //                 }),
-    //                 headers: {
-    //                     Accept: 'application/json',
-    //                     'Content-Type': 'application/json',
-    //                     'Access-Control-Allow-Origin': '*',
-    //                 },
-    //             });
-
-    //             const data = response.json();
-
-    //             if (data != null) {
-    //                 setAddResult((pre) => !pre);
-    //                 handleCloseEdit();
-    //             }
-    //         } catch (error) {
-    //             console.log('error');
-    //         }
-    //     }
-
-    //     return null;
-    // };
-
     useEffect(() => {
         axios
             .get(`https://localhost:7233/Category`)
@@ -156,7 +125,7 @@ function Categories() {
     }, [addResult]);
 
     return (
-        <div>
+        <div className="category">
             <div style={{ height: 1000, width: '100%' }}>
                 <div style={{ padding: '10px', display: 'flex' }}>
                     <Search>
@@ -170,13 +139,10 @@ function Categories() {
                             onChange={(e) => setSearch(e.target.value)}
                         />
                     </Search>
-                    <Button style={{ margin: '10px' }} type="submit" variant="outlined" color="success">
-                        Search
-                    </Button>
                 </div>
                 <Link to="/category/new" className="link" style={{ listStyle: 'none', textDecoration: 'none' }}>
                     <Button
-                        style={{ marginTop: '15px', margin: '15px' }}
+                        style={{ marginTop: '15px', marginBottom: '15px' }}
                         type="submit"
                         variant="outlined"
                         color="success"
@@ -210,7 +176,7 @@ function Categories() {
                                               <TableCell className="tableCell">{category.description}</TableCell>
                                               <TableCell className="tableCell">
                                                   <Link
-                                                      to="/category/viewdetails"
+                                                      to={`/category/viewcategory/${category.categoryId}`}
                                                       className="link"
                                                       style={{ listStyle: 'none', textDecoration: 'none' }}
                                                   >
@@ -224,7 +190,7 @@ function Categories() {
                                                       </Button>
                                                   </Link>
                                                   <Link
-                                                      to="/category/edit"
+                                                      to={`/category/editcategory/${category.categoryId}`}
                                                       className="link"
                                                       style={{ listStyle: 'none', textDecoration: 'none' }}
                                                   >

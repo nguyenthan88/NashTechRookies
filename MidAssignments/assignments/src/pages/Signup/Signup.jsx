@@ -22,7 +22,6 @@ const Signup = () => {
                 <form>
                     <TextField style={{ margin: 5 }} fullWidth label="Name" placeholder="Enter your name" />
                     <TextField style={{ margin: 5 }} fullWidth label="Email" placeholder="Enter your email" />
-
                     <TextField
                         style={{ margin: 5 }}
                         fullWidth

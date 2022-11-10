@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj": {}
+    "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj": {}
   },
   "projects": {
-    "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj": {
+    "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj",
+        "projectPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\nguyenvanthan\\.nuget\\packages\\",
-        "outputPath": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\obj\\",
+        "outputPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguyenvanthan\\AppData\\Roaming\\NuGet\\NuGet.Config",

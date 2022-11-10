@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NashTech\\Interview\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj": {}
+    "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj": {}
   },
   "projects": {
-    "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj": {
+    "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj",
+        "projectPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\nguyenvanthan\\.nuget\\packages\\",
-        "outputPath": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\obj\\",
+        "outputPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguyenvanthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\NashTech\\Interview\\TestWebAPI\\Test.Data\\Test.Data.csproj": {
+    "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Test.Data\\Test.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NashTech\\Interview\\TestWebAPI\\Test.Data\\Test.Data.csproj",
+        "projectUniqueName": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Test.Data\\Test.Data.csproj",
         "projectName": "Test.Data",
-        "projectPath": "D:\\NashTech\\Interview\\TestWebAPI\\Test.Data\\Test.Data.csproj",
+        "projectPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Test.Data\\Test.Data.csproj",
         "packagesPath": "C:\\Users\\nguyenvanthan\\.nuget\\packages\\",
-        "outputPath": "D:\\NashTech\\Interview\\TestWebAPI\\Test.Data\\obj\\",
+        "outputPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Test.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguyenvanthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj": {
-                "projectPath": "D:\\NashTech\\Interview\\TestWebAPI\\Common\\Common.csproj"
+              "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj": {
+                "projectPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Common\\Common.csproj"
               }
             }
           }
@@ -128,14 +128,14 @@
         }
       }
     },
-    "D:\\NashTech\\Interview\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj": {
+    "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NashTech\\Interview\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj",
+        "projectUniqueName": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj",
         "projectName": "TestWebAPI",
-        "projectPath": "D:\\NashTech\\Interview\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj",
+        "projectPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\TestWebAPI\\TestWebAPI.csproj",
         "packagesPath": "C:\\Users\\nguyenvanthan\\.nuget\\packages\\",
-        "outputPath": "D:\\NashTech\\Interview\\TestWebAPI\\TestWebAPI\\obj\\",
+        "outputPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\TestWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguyenvanthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -152,8 +152,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NashTech\\Interview\\TestWebAPI\\Test.Data\\Test.Data.csproj": {
-                "projectPath": "D:\\NashTech\\Interview\\TestWebAPI\\Test.Data\\Test.Data.csproj"
+              "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Test.Data\\Test.Data.csproj": {
+                "projectPath": "D:\\NashTech\\nashtechrookies\\MidAssignments\\TestWebAPI\\Test.Data\\Test.Data.csproj"
               }
             }
           }

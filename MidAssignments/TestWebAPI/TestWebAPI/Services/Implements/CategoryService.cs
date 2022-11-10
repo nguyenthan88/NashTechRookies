@@ -100,6 +100,7 @@ namespace TestWebAPI.Services.Implements
                 {
                     CategoryId =(int) requestCategory.CategoryId,
                     CategoryName = requestCategory.CategoryName,
+                    Description = requestCategory.Description,
                 };
             }
 
@@ -117,6 +118,7 @@ namespace TestWebAPI.Services.Implements
                     if (category != null)
                     {
                         category.CategoryName = updateModel.CategoryName;
+                        category.Description = updateModel.Description;
 
                         var updatedCategory = _categoryRepository.Update(category);
 
@@ -127,6 +129,7 @@ namespace TestWebAPI.Services.Implements
                         {
                             CategoryId = (int)updatedCategory.CategoryId,
                             CategoryName = updatedCategory.CategoryName,
+                            Description= updatedCategory.Description,
                         };
                     }
 

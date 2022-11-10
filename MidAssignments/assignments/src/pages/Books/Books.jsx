@@ -31,11 +31,10 @@ const Search = styled('div')(({ theme }) => ({
     '&:hover': {
         backgroundColor: alpha(theme.palette.common.black, 0.25),
     },
-    marginLeft: 0,
+    marginLeft: -10,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
         display: 'flex',
-        marginLeft: theme.spacing(1),
         width: '500px',
     },
 }));
@@ -54,7 +53,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: 'inherit',
     '& .MuiInputBase-input': {
         padding: theme.spacing(1, 1, 1, 0),
-        // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(4)})`,
         transition: theme.transitions.create('width'),
         width: '500px',
@@ -94,7 +92,7 @@ function Books() {
     }, []);
 
     return (
-        <div>
+        <div className="book">
             <div style={{ height: 1000, width: '100%' }}>
                 <div style={{ padding: '10px', display: 'flex' }}>
                     <Search>
@@ -107,13 +105,10 @@ function Books() {
                             onChange={(e) => setSearch(e.target.value)}
                         />
                     </Search>
-                    <Button style={{ margin: '10px' }} type="submit" variant="outlined" color="success">
-                        Search
-                    </Button>
                 </div>
                 <Link to="/book/new" className="link" style={{ listStyle: 'none', textDecoration: 'none' }}>
                     <Button
-                        style={{ marginTop: '15px', margin: '15px' }}
+                        style={{ marginTop: '15px', marginBottom: '15px' }}
                         type="submit"
                         variant="outlined"
                         color="success"
@@ -121,16 +116,16 @@ function Books() {
                         Add
                     </Button>
                 </Link>
-                <TableContainer component={Paper} className="table">
+                <TableContainer component={Paper} className="table bottom title">
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
                             <TableRow>
-                                <TableCell className="tableCell">Book Id</TableCell>
-                                <TableCell className="tableCell">Book name</TableCell>
+                                <TableCell className="tableCell">ID</TableCell>
+                                <TableCell className="tableCell">Name</TableCell>
                                 <TableCell className="tableCell">PublishingYear</TableCell>
                                 <TableCell className="tableCell">Description</TableCell>
                                 <TableCell className="tableCell">Price</TableCell>
-                                <TableCell className="tableCell">Category Id</TableCell>
+                                <TableCell className="tableCell">Category ID</TableCell>
                                 <TableCell className="tableCell">Actions</TableCell>
                             </TableRow>
                         </TableHead>
@@ -151,10 +146,17 @@ function Books() {
                                               </TableCell>
                                               <TableCell className="tableCell">{book.description}</TableCell>
                                               <TableCell className="tableCell">{book.price}</TableCell>
-                                              <TableCell className="tableCell">{book.categoryId}</TableCell>
+                                              <TableCell
+                                                  className="tableCell"
+                                                  style={{
+                                                      paddingLeft: '50px',
+                                                  }}
+                                              >
+                                                  {book.categoryId}
+                                              </TableCell>
                                               <TableCell className="tableCell">
                                                   <Link
-                                                      to="/book/viewdetails"
+                                                      to={`/book/viewbook/${book.bookId}`}
                                                       className="link"
                                                       style={{ listStyle: 'none', textDecoration: 'none' }}
                                                   >
@@ -162,13 +164,13 @@ function Books() {
                                                           style={{ marginTop: '15px', margin: '15px' }}
                                                           type="submit"
                                                           variant="outlined"
-                                                          color="secondary"
+                                                          color="primary"
                                                       >
                                                           Details
                                                       </Button>
                                                   </Link>
                                                   <Link
-                                                      to="/book/edit"
+                                                      to={`/book/editbook/${book.bookId}`}
                                                       className="link"
                                                       style={{ listStyle: 'none', textDecoration: 'none' }}
                                                   >
