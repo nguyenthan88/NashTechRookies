@@ -11,31 +11,32 @@ import {
     Button,
 } from '@mui/material';
 
+import moment from 'moment';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './View.scss';
 
 const ViewBook = ({ title }) => {
-    const { categoryId } = useParams();
-    const [category, setCategory] = useState([]);
+    const { bookId } = useParams();
+    const [book, setBook] = useState([]);
     const history = useNavigate();
 
     useEffect(() => {
-        async function getCategory() {
+        async function getBook() {
             try {
-                const category = await axios.get(`https://localhost:7233/Category/${categoryId}`);
-                console.log(category.data);
-                setCategory(category.data);
+                const book = await axios.get(`https://localhost:7233/Book/${bookId}`);
+                console.log(book.data);
+                setBook(book.data);
             } catch (error) {
                 console.log('Something is Wrong');
             }
         }
-        getCategory();
-    }, [categoryId]);
+        getBook();
+    }, [bookId]);
 
     function handleClick() {
-        history('/category');
+        history('/book');
     }
     return (
         <div className="views">
@@ -49,21 +50,27 @@ const ViewBook = ({ title }) => {
                             <TableRow style={{ backgroundColor: 'white' }}>
                                 <TableCell align="center">ID</TableCell>
                                 <TableCell align="center">Name</TableCell>
+                                <TableCell align="center">PublishingYear</TableCell>
                                 <TableCell align="center">Description</TableCell>
+                                <TableCell align="center">Price</TableCell>
+                                <TableCell align="center">Category Id</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell align="center">{category.categoryId}</TableCell>
-                                <TableCell align="center">{category.categoryName}</TableCell>
-                                <TableCell align="center">{category.description}</TableCell>
+                                <TableCell align="center">{book.bookId}</TableCell>
+                                <TableCell align="center">{book.bookName}</TableCell>
+                                <TableCell align="center">{moment(book.publishingYear).format('DD/MM/YYYY')}</TableCell>
+                                <TableCell align="center">{book.description}</TableCell>
+                                <TableCell align="center">{book.price}</TableCell>
+                                <TableCell align="center">{book.categoryId}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
                 </TableContainer>
                 <Box m={3} textAlign="center">
                     <Button variant="outlined" color="primary" onClick={handleClick}>
-                        Back to Home
+                        Back to Book
                     </Button>
                 </Box>
             </div>

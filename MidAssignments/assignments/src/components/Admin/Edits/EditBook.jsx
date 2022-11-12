@@ -100,6 +100,7 @@ function EditBook({ title }) {
                                             variant="outlined"
                                             required
                                             fullWidth
+                                            type={`datetime`}
                                             id="publishingYear"
                                             label="Publishing Year"
                                             value={book.publishingYear}
@@ -142,7 +143,8 @@ function EditBook({ title }) {
                                             id="categoryId"
                                             label="Category Id"
                                             value={book.categoryId}
-                                            disabled
+                                            // disabled
+                                            onChange={(e) => handleChange(e)}
                                         />
                                     </Grid>
                                 </Grid>

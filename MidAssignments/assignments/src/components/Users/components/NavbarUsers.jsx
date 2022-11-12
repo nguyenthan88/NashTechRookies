@@ -16,10 +16,10 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 
-const pages = ['home', 'book', 'category'];
+const pages = ['home', 'cart'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function Navbar() {
+function NavbarUsers() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -175,4 +175,4 @@ function Navbar() {
         </AppBar>
     );
 }
-export default Navbar;
+export default NavbarUsers;

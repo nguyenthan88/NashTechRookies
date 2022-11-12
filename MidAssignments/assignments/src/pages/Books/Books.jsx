@@ -21,6 +21,9 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Pagination from '@mui/material/Pagination';
+// import usePagination from '../Paging/Pagination';
+import Stack from '@mui/material/Stack';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -67,17 +70,83 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 function Books() {
     const [books, setBook] = useState([]);
+
     const [search, setSearch] = useState('');
+
     const [open, setOpen] = useState(false);
 
-    const handleClickOpen = () => {
+    const [addResult, setAddResult] = useState(false);
+
+    const [activeBookId, setActiveBookId] = useState();
+
+    const [pageCount, setpageCount] = useState(0);
+
+    let limit = 5;
+
+    useEffect(() => {
+        const getComments = async () => {
+            const res = await fetch(`https://localhost:7233/Book?PageNumber=1&PageSize=${limit}`);
+            console.log(res);
+            const data = await res.json();
+            const total = res.headers.get('x-total-count');
+            setpageCount(Math.ceil(total / limit));
+            console.log(Math.ceil(total / 12));
+            setBook(data);
+        };
+
+        getComments();
+    }, [limit]);
+
+    const fetchComments = async (currentPage) => {
+        const res = await fetch(`https://localhost:7233/Book?PageNumber=${currentPage}&PageSize=${limit}`);
+        console.log(res);
+        const data = await res.json();
+        return data;
+    };
+
+    const handlePageClick = async (data) => {
+        console.log(data.selected);
+
+        let currentPage = data.selected + 1;
+
+        const commentsFormServer = await fetchComments(currentPage);
+
+        setBook(commentsFormServer);
+    };
+
+    const handleClickOpen = (id) => {
+        setActiveBookId(id);
         setOpen(true);
     };
 
     const handleClose = () => {
         setOpen(false);
     };
+    const handleDelete = async (id) => {
+        if (id != null) {
+            try {
+                const response = await fetch(`https://localhost:7233/Book/${id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        Accept: 'application/json',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                    },
+                });
 
+                const data = response.json();
+
+                if (data != null) {
+                    setAddResult((pre) => !pre);
+                    handleClose();
+                }
+            } catch (error) {
+                console.log('error');
+            }
+        }
+
+        return null;
+    };
     useEffect(() => {
         axios
             .get(`https://localhost:7233/Book`)
@@ -89,7 +158,7 @@ function Books() {
             .catch(() => {
                 console.log('error');
             });
-    }, []);
+    }, [addResult]);
 
     return (
         <div className="book">
@@ -113,7 +182,7 @@ function Books() {
                         variant="outlined"
                         color="success"
                     >
-                        Add
+                        Add Book
                     </Button>
                 </Link>
                 <TableContainer component={Paper} className="table bottom title">
@@ -137,6 +206,7 @@ function Books() {
                                               ? book
                                               : book.bookName.toLowerCase().includes(search);
                                       })
+
                                       .map((book) => (
                                           <TableRow key={book.bookId}>
                                               <TableCell className="tableCell">{book.bookId}</TableCell>
@@ -184,7 +254,7 @@ function Books() {
                                                       </Button>
                                                   </Link>
                                                   <Button
-                                                      onClick={handleClickOpen}
+                                                      onClick={() => handleClickOpen(book.bookId)}
                                                       style={{ marginTop: '15px', margin: '15px' }}
                                                       type="submit"
                                                       variant="outlined"
@@ -199,6 +269,15 @@ function Books() {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                <Stack spacing={2}>
+                    <Pagination
+                        count={pageCount}
+                        page={pageCount}
+                        variant="outlined"
+                        shape="rounded"
+                        onChange={handlePageClick}
+                    />
+                </Stack>
             </div>
             <div>
                 <Dialog
@@ -216,7 +295,7 @@ function Books() {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleClose}>Close</Button>
-                        <Button autoFocus color="error">
+                        <Button autoFocus color="error" onClick={() => handleDelete(activeBookId)}>
                             Delete
                         </Button>
                     </DialogActions>

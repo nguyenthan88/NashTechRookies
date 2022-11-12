@@ -1,24 +1,45 @@
 import * as React from 'react';
+// import { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import Books from './pages/Books/Books';
 import Categories from './pages/Category/Categories';
 
-import Navbar from './components/Navbar/Navbar';
-import NewCategory from './components/News/NewCategory';
-import NewBook from './components/News/NewBook';
-import EditCategory from './components/Edits/EditCategory';
+import Navbar from './components/Admin/Navbar/Navbar';
+import NewCategory from './components/Admin/News/NewCategory';
+import NewBook from './components/Admin/News/NewBook';
+import EditCategory from './components/Admin/Edits/EditCategory';
 import Logout from './pages/LogOut/Logout';
 import Signup from './pages/Signup/Signup';
-import EditBook from './components/Edits/EditBook';
-import ViewBook from './components/ViewDetails/ViewBook';
-import ViewCategory from './components/ViewDetails/ViewCategory';
+import EditBook from './components/Admin/Edits/EditBook';
+import ViewBook from './components/Admin/ViewDetails/ViewBook';
+import ViewCategory from './components/Admin/ViewDetails/ViewCategory';
+// import NavbarUsers from './components/Users/components/NavbarUsers';
 
 function App() {
+    // const [initialStateCart, dispatch] = useReducer(reducer, initialArg);
+
+    // const initialState = {
+    //     listBooks: [],
+    //     totalBooks: 0,
+    //     totalPrice: 0,
+    // };
+    // function reducer(state, action) {
+    //     switch (action.type) {
+    //         case 'ADD_SUCCESS':
+    //             return {
+    //                 ...state,
+    //                 listBooks: [...state.listBooks, action.payload],
+    //             };
+    //         default:
+    //             throw new Error();
+    //     }
+    // }
     return (
         <div className="App">
             <Navbar />
+            {/* <NavbarUsers /> */}
             <Routes>
                 {/* <Route path="/" element={<Navbar />}> */}
                 <Route path="/logout" element={<Logout />} />

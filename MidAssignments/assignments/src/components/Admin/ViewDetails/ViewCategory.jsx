@@ -16,26 +16,26 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './View.scss';
 
-const ViewBook = ({ title }) => {
-    const { bookId } = useParams();
-    const [book, setBook] = useState([]);
+const ViewCategory = ({ title }) => {
+    const { categoryId } = useParams();
+    const [category, setCategory] = useState([]);
     const history = useNavigate();
 
     useEffect(() => {
-        async function getBook() {
+        async function getCategory() {
             try {
-                const book = await axios.get(`https://localhost:7233/Book/${bookId}`);
-                console.log(book.data);
-                setBook(book.data);
+                const category = await axios.get(`https://localhost:7233/Category/${categoryId}`);
+                console.log(category.data);
+                setCategory(category.data);
             } catch (error) {
                 console.log('Something is Wrong');
             }
         }
-        getBook();
-    }, [bookId]);
+        getCategory();
+    }, [categoryId]);
 
     function handleClick() {
-        history('/book');
+        history('/category');
     }
     return (
         <div className="views">
@@ -49,27 +49,21 @@ const ViewBook = ({ title }) => {
                             <TableRow style={{ backgroundColor: 'white' }}>
                                 <TableCell align="center">ID</TableCell>
                                 <TableCell align="center">Name</TableCell>
-                                <TableCell align="center">PublishingYear</TableCell>
                                 <TableCell align="center">Description</TableCell>
-                                <TableCell align="center">Price</TableCell>
-                                <TableCell align="center">Category Id</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell align="center">{book.bookId}</TableCell>
-                                <TableCell align="center">{book.bookName}</TableCell>
-                                <TableCell align="center">{book.publishingYear}</TableCell>
-                                <TableCell align="center">{book.description}</TableCell>
-                                <TableCell align="center">{book.price}</TableCell>
-                                <TableCell align="center">{book.categoryId}</TableCell>
+                                <TableCell align="center">{category.categoryId}</TableCell>
+                                <TableCell align="center">{category.categoryName}</TableCell>
+                                <TableCell align="center">{category.description}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
                 </TableContainer>
                 <Box m={3} textAlign="center">
                     <Button variant="outlined" color="primary" onClick={handleClick}>
-                        Back to Home
+                        Back to Category
                     </Button>
                 </Box>
             </div>
@@ -77,4 +71,4 @@ const ViewBook = ({ title }) => {
     );
 };
 
-export default ViewBook;
+export default ViewCategory;

@@ -3,10 +3,12 @@ import { Grid, Paper, Avatar, TextField, Button, Typography, Link } from '@mui/m
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+
 const Login = () => {
     const paperStyle = { padding: 40, height: '50vh', width: 280, margin: '70px auto' };
     const avatarStyle = { backgroundColor: '#1bbd7e' };
     const btnstyle = { margin: '20px 0' };
+
     return (
         <Grid>
             <Paper elevation={10} style={paperStyle}>

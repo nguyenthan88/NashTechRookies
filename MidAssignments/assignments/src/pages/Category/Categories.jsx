@@ -20,6 +20,8 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+// import Pagination from '@mui/material/Pagination';
+// import Stack from '@mui/material/Stack';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -76,6 +78,9 @@ function Categories() {
 
     const [activeCategoryId, setActiveCategoryId] = useState();
 
+    // const PER_PAGE = 5;
+    // const count = Math.ceil(categories.length / PER_PAGE);
+
     const handleClickOpen = (id) => {
         setActiveCategoryId(id);
         setOpen(true);
@@ -84,6 +89,15 @@ function Categories() {
     const handleClose = () => {
         setOpen(false);
     };
+
+    // const [page, setPage] = useState(1);
+    // const loadPosts = async () => {
+    //     const res = await axios.get(`https://localhost:7233/Category?PageNumber=${page}&PageSize=${PER_PAGE}`);
+    //     setCategories(res.data);
+    // };
+    // useEffect(() => {
+    //     loadPosts();
+    // }, [page]);
 
     const handleDelete = async (id) => {
         if (id != null) {
@@ -147,7 +161,7 @@ function Categories() {
                         variant="outlined"
                         color="success"
                     >
-                        Add
+                        Add Category
                     </Button>
                 </Link>
 
@@ -219,6 +233,15 @@ function Categories() {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                {/* <Stack spacing={2}>
+                    <Pagination
+                        count={count}
+                        page={page}
+                        variant="outlined"
+                        shape="rounded"
+                        onChange={(e, value) => setPage(value)}
+                    />
+                </Stack> */}
             </div>
             <div>
                 <Dialog

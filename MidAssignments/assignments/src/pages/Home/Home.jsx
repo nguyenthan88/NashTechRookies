@@ -1,7 +1,9 @@
+import MediaCard from '../../components/Users/components/MediaCard';
+
 function Home() {
     return (
         <div>
-            <h2>Home</h2>
+            <MediaCard title={`Book List`} />
         </div>
     );
 }
